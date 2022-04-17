@@ -22,6 +22,7 @@ app.get('/orchestrator/weather', (req,res) => {
         params: {
           lat: lat,
           lon: lon,
+          units: 'metric',
           appid: process.env.REACT_APP_OPEN_WEATHER_API_KEY,
         },
     }
